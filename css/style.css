@@ -1,0 +1,15 @@
+@media only screen and (max-width: 740px) {
+  #home-btns {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2px;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  
+  #away-btns {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

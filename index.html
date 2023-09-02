@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" >
+</head>
+<body class="bg-dark">
+    <div class="container w-100">
+        <h1 class="text-light text-center m-3">Score Board</h1>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Team1" id="team1-input">
+            <button class="btn btn-primary" type="button" id="team1-apply">Apply</button>
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Team2" id="team2-input">
+            <button class="btn btn-primary" type="button" id="team2-apply">Apply</button>
+          </div>
+        <div class="row justify-content-between m-4">
+            <div class="col-4 bg-light text-center text-dark h3 p-3" style="border-radius: 10px;" id="team1-name">
+             team1
+            </div>
+            <div class="col-4 bg-light text-center text-dark h3 p-3" style="border-radius: 10px;" id="team2-name">
+              team2
+            </div>
+            <div class="row justify-content-between" id="name-btns">
+                <div class="d-flex justify-content-start col-5 ms-auto me-auto m-2" id="home-btns"> 
+                    <div class="btn btn-danger m-1" id="home-del">Delete</div>
+                    <div class="btn btn-success m-1" id="home-up">Update</div>
+                </div>
+                <div class="d-flex justify-content-end col-5 ms-auto me-auto m-2" id="away-btns">
+                    <div class="btn btn-danger m-1" id="away-del">Delete</div>
+                    <div class="btn btn-success m-1" id="away-up">Update</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 text-center text-light h2 p-4 bg-danger m-auto" style="border-radius: 50% ;width: 85px; height: 85px;">VS</div>
+        <div class="row justify-content-between">
+            <div class="col-3 bg-light text-center text-dark h3 p-3 m-4 justify-content-start" style="border-radius: 10px;" id="home-team-score">
+             0
+            </div>
+            <div class="col-3 bg-light text-center text-dark h3 p-3 m-4 justify-content-end team-score" style="border-radius: 10px;" id="away-team-score" >
+              0
+            </div>
+        </div>
+            <div id="btns" class="row justify-content-between">
+                <div id="team1-btns" class="row col-3 text-center justify-content-start m-1">
+                    <div class="btn btn-success m-1" id="home-add-10">+10</div>
+                    <div class="btn btn-success m-1" id="home-add-20">+20</div>
+                    <div class="btn btn-danger m-1" id="home-reduce-10">-10</div>
+                    <div class="btn btn-danger m-1" id="home-reduce-5">-5</div>
+                    <div class="btn btn-danger m-1" id="home-delete-score">Delete</div>
+                </div>
+                <div id="team2-btns" class="row col-3 text-center justify-content-end m-1">
+                    <div class="btn btn-success m-1" id="away-add-10">+10</div>
+                    <div class="btn btn-success m-1" id="away-add-20">+20</div>
+                    <div class="btn btn-danger m-1" id="away-reduce-10">-10</div>
+                    <div class="btn btn-danger m-1" id="away-reduce-5">-5</div>
+                    <div class="btn btn-danger m-1" id="away-delete-score">Delete</div>
+                </div>
+            </div>
+    </div>
+
+ 
+    <script src="js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
